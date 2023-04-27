@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 
 async function getFooterRecipeData(searchValue) {
-    var response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&app_id=96578cf4&app_key=ef31306002be0ec63784488c0c25e2ce&q=${searchValue}`);
+    var response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&app_id=dc308d27&app_key=4b945e27454211b058c8f59d82bef0cd&q=${searchValue}`);
     var data = await response.json();
     console.log(data);
     return data;
@@ -113,7 +113,7 @@ function getNutritionalData(input){
       $("#textarea").append(table);
 };
 async function getNutritionData(searchValue) {
-  var response = await fetch(`https://api.edamam.com/api/nutrition-data?app_id=2112a5a9&app_key=23e2e4ce3ed3f6ede140a4099e207922&nutrition-type=cooking&ingr=${searchValue}`);
+  var response = await fetch(`https://api.edamam.com/api/nutrition-data?app_id=7a90e295&app_key=7821a60eb5eaebb2281fcee5e98ce537&nutrition-type=cooking&ingr=${searchValue}`);
   var data = await response.json();
   console.log(data);
   return data;
@@ -125,7 +125,7 @@ getNewsData().then(function(data){
 })
 
 async function getNewsData() {
-  var response = await fetch("https://gnews.io/api/v4/search?q=nutrition&&lang=en&country=uk&apikey=6d34f62fa675b45b88a1d2a71b713af6");
+  var response = await fetch("https://gnews.io/api/v4/search?q=nutrition&&lang=en&country=uk&apikey=0152e1a6f3f9d2a40b296c203f236659");
   const data = await response.json();
   console.log(data);
   return data;

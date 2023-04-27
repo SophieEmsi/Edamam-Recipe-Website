@@ -53,7 +53,7 @@ $(document).ready(function() {
 
 
 async function getRecipeData(searchValue) {
-  var response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&app_id=7e6d4ea5&app_key=a1bd339a9444c62936d8a832d41bc0ea&q=${searchValue}`);
+  var response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&app_id=dc308d27&app_key=4b945e27454211b058c8f59d82bef0cd&q=${searchValue}`);
   var data = await response.json();
   console.log(data);
   return data;
